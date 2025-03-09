@@ -1,5 +1,5 @@
-# author: Jordan Bourak & Tiffany Timbers
-# date: 2021-11-22
+# author: Aarav Mahajan
+# date: 2025-03-08
 
 all: results/horse_pop_plot_largest_sd.png \
 	results/horse_pops_plot.png \
