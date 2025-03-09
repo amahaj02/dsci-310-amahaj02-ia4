@@ -6,7 +6,7 @@ all: results/horse_pop_plot_largest_sd.png \
 	results/horses_spread.csv \
 	reports/qmd_example.html \
 	reports/qmd_example.pdf \
-	docs/report.html \
+	docs/index.html \
 	docs/.nojekyll
 
 
@@ -22,7 +22,7 @@ docs:
 # render quarto report in HTML and PDF
 reports/qmd_example.html: results reports/qmd_example.qmd docs/.nojekyll
 	quarto render reports/qmd_example.qmd --to html 
-	cp reports/qmd_example.html docs/report.html
+	cp reports/qmd_example.html docs/index.html
 
 reports/qmd_example.pdf: results reports/qmd_example.qmd docs/.nojekyll
 	quarto render reports/qmd_example.qmd --to pdf
@@ -36,7 +36,7 @@ clean:
 	rm -rf reports/qmd_example.html \
 		reports/qmd_example.pdf \
 		reports/qmd_example_files \ 
-		reports/report.html
+		reports/index.html
 	rm -rf reports/docs
 	rm -rf docs 
 	rm -rf reports/docs/qmd_example.html \
