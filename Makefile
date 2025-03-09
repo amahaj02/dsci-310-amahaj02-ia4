@@ -1,4 +1,4 @@
-# author: Aarav Mahajan
+
 # date: 2025-03-08
 
 all: results/horse_pop_plot_largest_sd.png \
